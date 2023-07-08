@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Temperature Converter</title>
+<link rel="stylesheet" type="text/css" href="tempstyle.css">
+
+</head>
+<body>
+    <div class="img">
+        <img src="./temp.jpg" alt="">
+
+</div>
+    <div class="container">
+    <h1 class="new">Temperature Converter</h1>
+    <form id="CTemp" onsubmit="CalTemp()"; return false>
+    <label for="temperature">Degrees</label><br>
+    <input type="number" id="temperature" name="temperature" value="0">
+    <select id="type" name="type">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+    </select><br>
+    <input type="submit" name="temp" id="submit"><br>
+    <div id="result"></div>
+</form>
+</div>
+<script src="tempconvert.js"></script>
+</body>
+</html>
