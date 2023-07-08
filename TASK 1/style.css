@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,100;1,400&display=swap');
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+ }
+ img{
+    border-radius: 50%;
+ }
+ section{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0)), url("./restuarent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container{
+    width:85%;
+    margin: auto;
+ }
+ nav{
+    height: 80px;
+ }
+nav h2{
+    float: left;
+    line-height: 50px;
+    font-size: 25px;
+    font-size: inline;
+    color: burlywood;  
+ }
+nav ul{
+    float: right;
+    line-height: 80px;
+ }
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+ }
+nav ul li a{
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+ }
+nav ul li a:hover{
+     background-color: brown;
+     transition: 0.5s ease;
+ }
+ nav ul li .active{
+    background-color: brown;
+ }
+.article{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    transform: translateY(25vh);
+ }
+.article h1{
+    font-size: 36px;
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 25px;
+ }
+ .article h1:hover{
+    background-color: rgb(255, 187, 0);
+    transition: 0.5s ease;
+ }
+.article p{
+    font-size: 18px;
+    color:wheat;
+    line-height: 1.5;
+    margin-bottom: 50px;
+ }
+.article .btn{
+    color:rgb(0, 213, 255);
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f15048;
+ }
+
+ .article .btn:hover{
+    background-color:rgb(255, 187, 0);
+    transition: 0.5s ease;
+
+ }
+ .social-links{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.social-links::before{
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top:42%;
+    left: -150px;
+    background-color: #494234;
+}
+.social-links i{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color:bisque;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.social-links i:hover{
+    transform: translateY(-5px);
+}
